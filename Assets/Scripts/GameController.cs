@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
+        Application.targetFrameRate = 300;
         _music = GetComponent<AudioSource>();
         ChangePause(false);
         if(GameInfo.gameMode == GameMode.Player){

@@ -55,7 +55,8 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Player1" ||
-            collision.transform.tag == "Player2")
+            collision.transform.tag == "Player2" ||
+            collision.transform.tag == "AI")
         {
             print($"{speed} + {acceleration} = {speed + acceleration}");
             speed += acceleration;
